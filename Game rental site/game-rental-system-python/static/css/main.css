@@ -1,0 +1,22 @@
+.login-page, .register-page {
+  background:url(../img/background.jpg) no-repeat #001F3F;
+  background-size: cover;
+  color: whitesmoke;
+}
+#games .game {
+    height: 400px;
+    max-width: 100%;
+}
+#games .game  .thumbnail {
+      height: 200px;
+}
+#games .game  .thumbnail  img {
+    max-height: 200px;
+    max-width: 100%;
+  }
+#stars {
+  font-size: 30px;
+}
+#stars .glyphicon-star {
+  color: #ffeb3b
+}

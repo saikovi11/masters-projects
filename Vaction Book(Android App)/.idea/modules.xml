@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/LocationMarkerSQLite1/app/build/intermediates/exploded-aar/com.android.support/design/23.0.1/23.0.1.iml" filepath="$PROJECT_DIR$/LocationMarkerSQLite1/app/build/intermediates/exploded-aar/com.android.support/design/23.0.1/23.0.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LocationMarkerSQLite1/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/23.3.0.iml" filepath="$PROJECT_DIR$/LocationMarkerSQLite1/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/23.3.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LocationMarkerSQLite1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.4.0/8.4.0.iml" filepath="$PROJECT_DIR$/LocationMarkerSQLite1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.4.0/8.4.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LocationMarkerSQLite1/app/build/generated/source/buildConfig/androidTest/androidTest.iml" filepath="$PROJECT_DIR$/LocationMarkerSQLite1/app/build/generated/source/buildConfig/androidTest/androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LocationMarkerSQLite1/app/build/generated/source/buildConfig/buildConfig.iml" filepath="$PROJECT_DIR$/LocationMarkerSQLite1/app/build/generated/source/buildConfig/buildConfig.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LocationMarkerSQLite1/app/build/intermediates/manifests/full/debug/debug.iml" filepath="$PROJECT_DIR$/LocationMarkerSQLite1/app/build/intermediates/manifests/full/debug/debug.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LocationMarkerSQLite1/app/build/intermediates/bundles/debug/instant-run/instant-run.iml" filepath="$PROJECT_DIR$/LocationMarkerSQLite1/app/build/intermediates/bundles/debug/instant-run/instant-run.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LocationMarkerSQLite1/app/src/main/main.iml" filepath="$PROJECT_DIR$/LocationMarkerSQLite1/app/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LocationMarkerSQLite1/app/build/generated/source/r/r.iml" filepath="$PROJECT_DIR$/LocationMarkerSQLite1/app/build/generated/source/r/r.iml" />
+    </modules>
+  </component>
+</project>

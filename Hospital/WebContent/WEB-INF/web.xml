@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Hospital</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Diagnoses</display-name>
+    <servlet-name>Diagnoses</servlet-name>
+    <servlet-class>Servlet.Diagnoses</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Diagnoses</servlet-name>
+    <url-pattern>/Diagnoses</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PhysicianEntry</display-name>
+    <servlet-name>PhysicianEntry</servlet-name>
+    <servlet-class>Servlet.PhysicianEntry</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PhysicianEntry</servlet-name>
+    <url-pattern>/PhysicianEntry</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PatientEntry</display-name>
+    <servlet-name>PatientEntry</servlet-name>
+    <servlet-class>Servlet.PatientEntry</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PatientEntry</servlet-name>
+    <url-pattern>/PatientEntry</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PhysicianDetail</display-name>
+    <servlet-name>PhysicianDetail</servlet-name>
+    <servlet-class>Servlet.PhysicianDetail</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PhysicianDetail</servlet-name>
+    <url-pattern>/PhysicianDetail</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PatientDetail</display-name>
+    <servlet-name>PatientDetail</servlet-name>
+    <servlet-class>Servlet.PatientDetail</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PatientDetail</servlet-name>
+    <url-pattern>/PatientDetail</url-pattern>
+  </servlet-mapping>
+  
+  <error-page>
+    <!-- Uncaught exception -->
+    <error-code>500</error-code>
+    <location>/errorPage.jsp</location>
+</error-page>
+</web-app>

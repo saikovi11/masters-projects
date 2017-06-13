@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE hibernate-configuration SYSTEM
+
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+ 
+
+<hibernate-configuration>
+
+   <session-factory>
+   <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+
+   <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+
+   <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
+
+   <property name="hibernate.connection.username">naveen</property>
+
+   <property name="hibernate.connection.password">naveen</property>
+
+   <property name="hibernate.hbm2ddl.auto">update</property>
+
+   <property name="show_sql">true</property>
+   
+   <property name="hibernate.current_session_context_class">org.hibernate.context.internal.ThreadLocalSessionContext</property>
+
+   <mapping class="Model.Charges"/>
+   <mapping class="Model.Diagnoses"/>
+   <mapping class="Model.DiagnosesBridge"/>
+   <mapping class="Model.DischargePhysicianBridge"/>
+   <mapping class="Model.Discharges"/>
+   <mapping class="Model.HospitalBridge"/>
+   <mapping class="Model.Hospitals"/>
+   <mapping class="Model.MedicalItems"/>
+   <mapping class="Model.Physicians"/>
+   <mapping class="Model.Procedures"/>
+   <mapping class="Model.ProceduresBridge"/>
+   <mapping class="Model.Specialties"/>
+   <mapping class="Model.SpecialtyBridge"/>
+
+</session-factory>
+
+</hibernate-configuration>
