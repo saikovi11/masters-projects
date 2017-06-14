@@ -1,0 +1,83 @@
+<!doctype html>
+
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<html ng-app="scotchTodo">
+<head>
+	<!-- META -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+
+	<title>Node/Angular SMS App</title>
+
+	<!-- SCROLLS -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"><!-- load bootstrap -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+	<style>
+		html 					{ overflow-y:scroll; }
+		body 					{ padding-top:50px; }
+		#todo-list 				{ margin-bottom:30px; }
+		#todo-form 	 			{ margin-bottom:50px; }
+	</style>
+
+	<!-- SPELLS -->
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script><!-- load angular -->
+
+	<script src="js/controllers/main.js"></script> <!-- load up our controller -->
+	<script src="js/services/todos.js"></script> <!-- load our todo service -->
+	<script src="js/core.js"></script> <!-- load our main application -->
+
+</head>
+<!-- SET THE CONTROLLER -->
+<body ng-controller="mainController">
+	<div class="container">
+
+		<!-- HEADER AND TODO COUNT -->
+		<center><h2>SMS Loger: </h>		</center><br>
+
+		<!-- FORM TO CREATE TODOS -->
+		<div id="todo-form" class="row">
+			<div class="col-sm-8 col-sm-offset-2 text-center">
+				<form>
+					<div class="form-group">
+					<table border="0">
+						<tr><td><h3>Sender Name: </h3></td><td><input type="text" class="form-control input-lg" placeholder="sender name" ng-model="formData.text"></td></tr>
+						<tr><td><h3>SMS Mater: </h3></td><td><input type="text" class="form-control input-lg" placeholder="sms mater" ng-model="formData.mob" height="100"></td></tr>
+						<tr><td colspan="2"><button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()">Insert</button></td></tr>
+					</table>
+						<!-- BIND THIS VALUE TO formData.text IN ANGULAR -->
+						<!--<input type="text" class="form-control input-lg " placeholder="contact name" ng-model="formData.text"><br>
+						<input type="text" class="form-control input-lg " placeholder="contact number" ng-model="formData.number">-->
+					</div>
+
+					<!-- createToDo() WILL CREATE NEW TODOS -->
+					<!--<button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()">Record</button>-->
+				</form>
+			</div>
+		</div>
+		
+
+		<!-- TODO LIST -->
+		<div id="todo-list" class="row">
+			<div class="col-sm-4 col-sm-offset-4">
+
+			<!-- LOOP OVER THE TODOS IN $scope.todos -->
+				<div class="checkbox">
+				<table border="1" width="100%">
+				<tr><th>Sender Name</th><th>SMS Matter</th><th>Delete</th></tr>
+				<tr ng-repeat="todo in todos"><td><h4><p> {{ todo.text }}</p></h4></td><td><h4><p>{{ todo.mob }}</p></h4></td><td><h4><p ng-click="deleteTodo(todo._id)"> Delete</p></h4></td></tr>
+				</table>
+					<label>
+						<!--<h4><p ng-click="deleteTodo(todo._id)"> {{ todo.text }} - {{ todo.mob }}</p></h4>-->
+					</label>
+				</div>
+
+				<p class="text-center" ng-show="loading">
+					<span class="fa fa-spinner fa-spin fa-3x"></span>
+				</p>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>
